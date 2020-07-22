@@ -32,7 +32,7 @@ union DoubleBytes
 	byte AsBytes[sizeof(double)]; // 4 Bytes
 } DoubleBytes;
 
-String str = "Hello Eylül!";
+String str = "Hello World!";
 char arr[15];
 
 
