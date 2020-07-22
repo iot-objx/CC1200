@@ -1,0 +1,23 @@
+CC1200	KEYWORD1
+StatType	KEYWORD1
+registerSetting_t	KEYWORD1
+
+Init    KEYWORD2
+Configure   KEYWORD2
+GetStat KEYWORD2
+Strobe  KEYWORD2
+Reset   KEYWORD2
+Idle    KEYWORD2
+PowerDown   KEYWORD2
+Transmit    KEYWORD2
+Receive KEYWORD2
+FlushTxFifo KEYWORD2
+FlushRxFifo KEYWORD2
+ResolveFifoErr  KEYWORD2
+GetAddress  KEYWORD2
+SetAddress  KEYWORD2
+ReadRegister    KEYWORD2
+WriteRegister   KEYWORD2
+UpdateRegister  KEYWORD2
+ReadRxFifo  KEYWORD2
+WriteTxFifo KEYWORD2
