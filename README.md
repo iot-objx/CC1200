@@ -16,6 +16,8 @@ The CC1200 module utilizes SPI interface to talk to its mother MCU. Although, th
 
 ![CC1200EMK Sketch](/Documentation/CC1200-sketch.png)
 
+Note that the illustration above is just for reference and ease-of-use explanation. Furthermore, the CC1200 is a **3.3V** logic level device and hence a supply voltage of such. During development, it was observed that some of the Arduino boards, namely Atmega328P ones, are unable to supply enough current thus leading to unexpected behavior. Therefore, the reset pin was connected to **5V** despite the board being a **3.3V** logic device. My extensive experimentation had not brought up any issues in the duration of two long years. :sweat_smile: 
+
 CC1200  | Arduino Mega
 --------|-------------
 GND     |	GND		
@@ -28,10 +30,9 @@ MISO	|	MISO (D50)
 VDD	    |	3V3	
 RST*	|	5V	
 
-*On the actual module, there is no reset (RST) pin broken out. Here, the reset pin was populated from the female headers underneath. See below. **MISSING**
+*On the actual module, there is no reset (RST) pin broken out. Here, the reset pin was populated from the female headers underneath. See below. 
 
-Note that the illustration above is just for reference and ease-of-use explanation. Furthermore, the CC1200 is a **3.3V** logic level device and hence a supply voltage of such. During development, it was observed that some of the Arduino boards, namely Atmega328P ones, are unable to supply enough current thus leading to unexpected behavior. Therefore, the reset pin was connected to **5V** despite the board being a **3.3V** device. My extensive experimentation had not brought up any issues in the duration of two long years. :sweat_smile: 
-
+![CC1200EMK Reset](/Documentation/cc1200-back-reset.jpg)
 
 ***
 ## Library Functions/Methods
